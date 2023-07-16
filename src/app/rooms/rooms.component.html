@@ -1,0 +1,7 @@
+<h1> Welcome to {{hotelName}}</h1>
+
+<div [innerHTML]="numberOfRooms"></div>
+<div *ngIf="rooms.availableRooms > 0">Room List:
+    <ul *ngFor="let room in roomList"><li>{{room}}</li></ul>
+</div>
+<button (click)="toggle()">Toggle Rooms</button>
