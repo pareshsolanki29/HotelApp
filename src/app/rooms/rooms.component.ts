@@ -15,6 +15,7 @@ export class RoomsComponent {
   }
   roomList : RoomList[]=[
     {
+      roomNumber: 1,
     roomType: 'Delux room',
     amenities: "AC, Wifi, TV, Bathroom. Kitchen",
     price: 500,
@@ -22,6 +23,7 @@ export class RoomsComponent {
     checkoutTime: new Date ("20-Nov-2022")
 
   },{
+    roomNumber: 2,
     roomType: 'Delux2 room',
     amenities: "AC, Wifi, TV, Bathroom. Kitchen",
     price: 500,
