@@ -3,23 +3,5 @@
 <div [innerHTML]="numberOfRooms"></div>
 <div *ngIf="rooms.availableRooms > 0">Room List:
     
-    <table>
-      
-            <tr>
-            <th>Room Number</th>
-            <th>Room Type</th>
-            <th>Room Amenities</th>
-        </tr>
-       
-        <tbody>
-            <tr [ngClass]="e? 'even': 'odd'"
-            *ngFor="let room of roomList; let e = even; let o= odd">
-                <td>{{room.roomNumber}}</td>
-                <td>{{room.roomType}}</td>
-                <td>{{room.amenities}}</td>
-            </tr>
-        </tbody>
-    </table>
-
-</div>
+   <app-room-list [rooms]="roomList"></app-room-list></div>
 <button (click)="toggle()">Toggle Rooms</button>

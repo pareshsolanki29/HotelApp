@@ -1,0 +1,18 @@
+<table class="table">
+      
+    <tr>
+    <th>Room Number</th>
+    <th>Room Type</th>
+    <th>Room Amenities</th>
+</tr>
+
+<tbody>
+    <tr [ngClass]="e? 'even': 'odd'"
+    *ngFor="let room of rooms; let e = even; let o= odd">
+        <td>{{room.roomNumber}}</td>
+        <td>{{room.roomType}}</td>
+        <td>{{room.amenities}}</td>
+        <td><button (click)="selectRoom()"></button></td>
+    </tr>
+</tbody>
+</table>
